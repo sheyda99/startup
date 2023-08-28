@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    font-family: 'Manrope', sans-serif;
+}
+a {
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sign-in {
+    background: linear-gradient(180deg, rgba(43, 43, 43, 0.20) 0%, rgba(151, 71, 255, 0.20) 100%), #2B2B2B;
+    padding: 150px 0;
+    position: relative;
+}
+#green-light {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#small-purple-light {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);   
+}
+#purple-light {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#sign-in > div {
+    width: min-content;
+    margin: 0 auto;
+}
+#sign-in .form-header h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+#sign-in .form-header p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#sign-in form {
+    margin: 45px 0 25px;
+}
+#sign-in form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+#sign-in form .form-group span {
+    color: #ff0000;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#email-group::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url("../images/icons/user.svg");
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+#pass::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url("../images/icons/password.svg");
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+#pass img {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+#sign-in form input:not([type=checkbox]) {
+    display: block;
+    max-width: 480px;
+    width: 480px;
+    padding: 10px 48px;
+    margin: 0 auto;
+    border: 1px solid #EBEBEB;
+    background: rgba(136, 87, 239, 0.05);
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ffffff;
+    transition: 0.5s;
+}
+#sign-in form input::placeholder {
+    color: #B9B9B9;
+}
+#sign-in form input:focus {
+    outline: 0;
+    border-color: #8857EF;
+    background: rgba(136, 87, 239, 0.05);
+}
+
+.checkbox {
+    display: block;
+    position: relative;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 100%;
+    padding-left: 35px;
+    cursor: pointer;
+    user-select: none;
+}
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #EBEBEB;
+}  
+.checkbox:hover input ~ .checkmark {
+    border: 1px solid #CDCDCD;
+}
+.checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}  
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.checkbox .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 9px;
+    border: solid #54A3FF;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+#forget {
+    color: #54A3FF;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+#forget:hover {
+    text-decoration: underline;
+}
+
+#sign-in form button {
+    width: 480px;
+    padding: 12px 28px;
+    border-radius: 1px;
+    border: 2px solid #9DE8A0;
+    background: #47DC4D;
+    color: #EDF4ED;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#sign-in > div > p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#sign-in > div > p a {
+    font-weight: 600;
+}
+#sign-in > div > p a:hover {
+    text-decoration: underline;
+}
+
+#sign-in .social-medias {
+    display: flex;
+    justify-content: center;
+}
+#sign-in .social-medias a {
+    width: 100px;
+    padding: 12px 0px;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #F0EDF5;
+    background: #57446F;
+    transition: 0.5s;
+}
+#sign-in .social-medias a:hover {
+    border-color: #8857EF;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daxil ol | CodeLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container" id="sign-in">
+        <img src="assets/images/elements/green-light.svg" alt="green light" id="green-light">
+        <img src="assets/images/elements/small-purple-light.svg" alt="small purple light" id="small-purple-light">
+        <img src="assets/images/elements/purple-light.svg" alt="purple light" id="purple-light">
+        <div>
+            <div class="form-header">
+                <h1>Xoş gəldiniz</h1>
+                <p>Hesabınıza daxil olmaq üçün məlumatları daxil edin</p>
+            </div>
+            <form id="signin-form">
+                <div class="form-group" id="email-group">
+                    <input type="email" placeholder="E-poçt" id="email" name="email">
+                    <span id="email-error" style="display: none;">E-poçt ünvanı qeyd olunmalıdır</span>
+                </div>
+                <div class="form-group" id="pass">
+                    <input type="password" placeholder="Şifrə" id="password" name="password">
+                    <span id="pass-error" style="display: none;">Şifrə qeyd olunmalıdır</span>
+                    <img src="assets/images/icons/eye-on.svg" alt="eye icon" id="eye">
+                </div>
+                <div class="d-flex" style="margin-bottom: 25px;">
+                    <label class="checkbox" for="remember">Məni xatırla
+                        <input type="checkbox" name="remember" id="remember">
+                        <span class="checkmark"></span>
+                    </label>
+                    <a href="forget-password.html" id="forget">Şifrənizi xatırlamırsınız?</a>
+                </div>
+                <button type="submit">Daxil ol</button>
+            </form>
+            <p>Hesabınız yoxdur? <a href="sign-up.html">Hesab yarat</a></p>
+            <p>Sosial media hesabınızla daxil olun:</p>
+            <div class="social-medias">
+                <a href="#">
+                    <img src="assets/images/icons/google.svg" alt="Google">
+                </a>
+                <a href="#">
+                    <img src="assets/images/icons/facebook.svg" alt="Facebook">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
