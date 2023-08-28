@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesab yarat | CodeLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container" id="sign-up">
+        <img src="assets/images/elements/green-light.svg" alt="green light" id="green-light">
+        <img src="assets/images/elements/small-purple-light.svg" alt="small purple light" id="small-purple-light">
+        <img src="assets/images/elements/purple-light.svg" alt="purple light" id="purple-light">
+        <div>
+            <div class="form-header">
+                <h1>Hesab yarat</h1>
+                <p>Məlumatlarnızı daxil edərək yeni hesab yaradın</p>
+            </div>
+            <form id="signin-form">
+                <div class="form-group user">
+                    <input type="text" placeholder="Ad" id="fname" name="fname">
+                    <!-- <span id="email-error" style="display: none;"></span> -->
+                </div>
+                <div class="form-group user">
+                    <input type="text" placeholder="Soyad" id="sname" name="sname">
+                    <!-- <span id="email-error" style="display: none;"></span> -->
+                </div>
+                <div class="form-group email">
+                    <input type="email" placeholder="E-poçt" id="email" name="email">
+                    <!-- <span id="email-error" style="display: none;"></span> -->
+                </div>
+                <div class="form-group phone">
+                    <input type="phone" placeholder="+994" id="phone" name="phone">
+                    <!-- <span id="email-error" style="display: none;"></span> -->
+                </div>
+                <div class="form-group pass">
+                    <input type="password" placeholder="Şifrə" id="password" name="password">
+                    <!-- <span id="pass-error" style="display: none;"></span> -->
+                    <img src="assets/images/icons/eye-on.svg" alt="eye icon" id="eye">
+                </div>
+                <div class="form-group pass">
+                    <input type="password" placeholder="Şifrə doğrulaması" id="password-check" name="password-check">
+                    <!-- <span id="pass-error" style="display: none;"></span> -->
+                    <img src="assets/images/icons/eye-on.svg" alt="eye icon" id="eye2">
+                </div>
+                <div style="margin-bottom: 45px; padding-top: 10px;">
+                    <label class="checkbox" for="agree"><a href="terms.html">İstifadə şərtləri və məxfilik siyasəti ilə razıyam.</a>
+                        <input type="checkbox" name="agree" id="agree">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <button type="submit">Hesab yarat</button>
+            </form>
+            <p>Artıq hesabınız var? <a href="sign-in.html">Daxil ol</a></p>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        var eye2 = document.getElementById("eye2");
+        var passInput2 = document.getElementById("password-check");
+
+        eye2.addEventListener("click", function () {
+            if (passInput2.type === "password") {
+                passInput2.type = "text";
+                eye2.src = "assets/images/icons/eye-off.svg";
+            } else {
+                passInput2.type = "password";
+                eye2.src = "assets/images/icons/eye-on.svg";
+            }
+        });
+    </script>
+</body>
+</html>
