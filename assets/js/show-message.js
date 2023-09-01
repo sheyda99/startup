@@ -18,10 +18,22 @@ var sentAgain = document.getElementById("sent-again");
 
 if (sentAgain != null) {
     sentAgain.addEventListener("click", function(e) {
-            message.style.display = "block";
+        message.style.display = "block";
+        setTimeout(function () {
+            message.style.display = "none";
+        }, 5000);
+        e.preventDefault();
+    });
+}
+
+var newPass = document.getElementById("new-pass-form");
+
+if (newPass != null) {
+    newPass.addEventListener("submit", function(e) {
+        message.style.display = "block";
             setTimeout(function () {
-                message.style.display = "none";
-            }, 5000);
+                window.open('/sign-in.html', '_self');
+            }, 3000);
             e.preventDefault();
     });
 }
