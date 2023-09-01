@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şifrəni yenilə | KitHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container" id="sign-in" style="padding-top: 200px;">
+        <img src="assets/images/elements/green-light.svg" alt="green light" id="green-light">
+        <img src="assets/images/elements/small-purple-light.svg" alt="small purple light" id="small-purple-light">
+        <img src="assets/images/elements/purple-light.svg" alt="purple light" id="purple-light">
+
+        <div id="message" style="display: none;"><span>Birdəfəlik kodu (OTP) Yenidən göndərildi</span></div>
+
+        <div>
+            <div class="form-header">
+                <h1>Təsdiqləmə</h1>
+                <p>E-poçt ünvanınıza göndərilmiş birdəfəlik kodu (OTP) daxil edin</p>
+            </div>
+            <form id="otp-form" action="/new-password.html">
+                <div id="inputs" class="form-group otp" style="margin-bottom: 45px;">
+                    <input id="otp1" name="otp1" class="input" type="text" inputmode="numeric" maxlength="1" required autocomplete="off">
+                    <input id="otp2" name="otp2" class="input" type="text" inputmode="numeric" maxlength="1" required autocomplete="off">
+                    <input id="otp3" name="otp3" class="input" type="text" inputmode="numeric" maxlength="1" required autocomplete="off">
+                    <input id="otp4" name="otp4" class="input" type="text" inputmode="numeric" maxlength="1" required autocomplete="off">
+                    <input id="otp5" name="otp5" class="input" type="text" inputmode="numeric" maxlength="1" required autocomplete="off">
+                    <input id="otp6" name="otp6" class="input" type="text" inputmode="numeric" maxlength="1" required autocomplete="off">
+                </div>
+                <button type="submit">Təsdiq et</button>
+            </form>
+            <p><a href="#" id="sent-again" style="color: #54A3FF;">Yenidən göndər</a></p>
+        </div>
+    </div>
+
+    <script src="assets/js/show-message.js"></script>
+    <script src="assets/js/otp.js"></script>
+</body>
+</html>
