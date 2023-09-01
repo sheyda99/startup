@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daxil ol | CodeLab</title>
+    <title>Daxil ol | KitHub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
@@ -53,9 +53,20 @@
 
     <script src="assets/js/script.js"></script>
     <script>
+        var eye = document.getElementById("eye");
+        var passInput = document.getElementById("password");
+
+        eye.addEventListener("click", function () {
+            if (passInput.type === "password") {
+                passInput.type = "text";
+                eye.src = "assets/images/icons/eye-off.svg";
+            } else {
+                passInput.type = "password";
+                eye.src = "assets/images/icons/eye-on.svg";
+            }
+        });
         var signin = document.getElementById("signin-form");
         var emailInput = document.getElementById("email");
-        var passInput = document.getElementById("password");
         var emailError = document.getElementById("email-error");
         var passError = document.getElementById("pass-error");
 
