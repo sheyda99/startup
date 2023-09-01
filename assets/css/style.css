@@ -251,3 +251,18 @@ a {
 }
 
 /******** FORGET PASSWORD ********/
+#message {
+    border-radius: 26px;
+    background: var(--purple-900, #8857EF);
+    padding: 12px 20px;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+#message span {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0;
+    white-space: nowrap;
+}
